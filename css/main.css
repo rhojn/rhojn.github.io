@@ -96,6 +96,15 @@ header #logo {
 
 
 
+#undr {
+	width: 100%;
+	position: absolute;
+	bottom: 4em;
+	font-size: 1.5em;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+}
 
 footer {
     position: fixed;
