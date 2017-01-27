@@ -10,8 +10,6 @@ html {
     line-height: 1.4;
 }
 body {
-    background: url(../img/background.jpg);
-    background-position: center;
 }
 * {
     box-sizing: border-box;
@@ -63,17 +61,19 @@ textarea {
 
 
 .front-page{
-    width: calc(100% - 4em);
-    margin-left: 2em;
-    margin-right: 2em;
+    width: 100%;
     position: relative;
 
+    background: url(../img/background.jpg);
+    background-position: center;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.top {
+    transform: translateY(-120%);
+}
 .front-page .box {
     width: 60%;
 }
@@ -204,7 +204,49 @@ textarea {
   animation-iteration-count: 1;
 }
 
-
+.main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.hf-1, hf-2 {
+    width: 50%;
+    height: 100%;
+    padding: 5em;
+}
+.hf-1 {
+    float: left;
+    background-color: #0091ea;
+    color: #fff;
+}
+.hf-1 h1 {
+    font-family: "Oswald";
+    font-size: 4em;
+}
+.hf-1 h1::after {
+    content: "";
+    width: 100px;
+    height: 10px;
+    background-color: #fff;
+    display: block;
+    margin-top: 0.2em;
+}
+.hf-1 p {
+    font-family: "Merriweather", serif;
+}
+.hf-1 #sub-header {
+    font-weight: bold;
+}
+.hf-1 a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.hf-2 {
+    float: right;
+    background-color: #fff;
+}
 .hidden {
     display: none !important;
 }
